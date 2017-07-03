@@ -1,0 +1,41 @@
+### Get Posts
+GET http://localhost:3000/api/posts HTTP/1.1
+
+### Post
+POST  http://localhost:3000/api/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "My First Post",
+    "content": "My first blog post"
+}
+
+### Adding a new Post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title": "My Second Post",
+    "content": "My Second Post"
+}
+
+### Adding a new Post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title": "My Third Post",
+    "content": "My Third Post"
+}
+
+### UPDATE A POST
+PUT http://localhost:3000/api/posts/5959e2f986ab6073d7453504
+Content-Type: application/json
+
+{
+    "title": "My Four Post",
+    "content": "this was updated"
+}
+
+### DELETE A POST
+DELETE http://localhost:3000/api/posts/5959e35086ab6073d7453505
